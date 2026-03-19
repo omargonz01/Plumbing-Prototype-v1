@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.tsx';
 import AppOld from './AppOld.tsx';
 import AppV2 from './AppV2.tsx';
+import AppV3 from './AppV3.tsx';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/old" element={<AppOld />} />
         <Route path="/v2" element={<AppV2 />} />
+        <Route path="/v3" element={<AppV3 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
